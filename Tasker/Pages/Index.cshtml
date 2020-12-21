@@ -1,6 +1,11 @@
-﻿<h1>All Tasks</h1>
+﻿@page 
+@model Tasker.Pages.IndexModel
+@{ 
+    ViewData["Title"] = "Index";
+}
+<h1>All Tasks</h1>
 <table>
-    @foreach (var task in Model.Task)
+    @foreach (var task in Model.Tasks)
     {
     <tr>
         <th>@task.Id</th>
