@@ -13,7 +13,7 @@ namespace Tasker
         public string Title { get; set; }
         [Required, MinLength(10)]
         public string Description { get; set; }
-        [Required, Range(1.0, 5.0)]
+        [Required, Range(1, 5)]
         public int Priority { get; set; }
     }
 }
