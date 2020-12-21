@@ -3,10 +3,10 @@
     @foreach (var task in Model.Task)
     {
     <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Description</th>
-        <th>Priority</th>
+        <th>@task.Id</th>
+        <th>@task.Title</th>
+        <th>@task.Description</th>
+        <th>@task.Priority</th>
     </tr>
     }
 </table>
