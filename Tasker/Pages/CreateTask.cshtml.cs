@@ -11,7 +11,11 @@ namespace Tasker.Pages
     {
         [BindProperty]
         public Task NewTask { get; set; }
-        public IActionResult OnGet()
+        public void OnGet()
+        {
+
+        }
+        public IActionResult OnPost()
         {
             return RedirectToPage("Index");
         }
